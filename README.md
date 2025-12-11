@@ -50,7 +50,7 @@ Binop   → + | - | * | /
 ## 🧩 3. Struktur Proyek
 
 ```
-one-l-compiler/
+compiler-1lp/
 │
 ├── lexer.py
 ├── parser.py
