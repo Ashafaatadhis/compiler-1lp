@@ -1,0 +1,4 @@
+x := 5;
+y := x * 3;
+z := (print(x, y), y + 10);
+print(z, x + y + z)

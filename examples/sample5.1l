@@ -1,0 +1,4 @@
+print(1);
+x := (print(2), print(3), 100);
+y := x * 2;
+print(x, y)
