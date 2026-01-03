@@ -8,9 +8,13 @@ def run(code):
     parser = OneLParser()
     interpreter = Interpreter()
 
-    tokens = lexer.tokenize(code)
-    ast = parser.parse(tokens)
-    interpreter.eval_stm(ast)
+    try:
+        tokens = lexer.tokenize(code)
+        ast = parser.parse(tokens)
+        interpreter.eval_stm(ast)
+        print("Valid")
+    except Exception:
+        print("Tidak valid")
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
